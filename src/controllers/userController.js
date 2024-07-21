@@ -50,7 +50,7 @@ const userSignUp = async (req, res) => {
       emailAddress,
       password: hashedPassword,
       description,
-      profilePicture: 'https://cdn-icons-png.flaticon.com/512/149/149071.png'
+      profilePicture: 'https://www.constructoragyq.com/wp-content/uploads/placeholder-male-square.png'
     })
 
     const token = jwt.sign({ userId: user._id }, process.env.secret, { expiresIn: '7d' })
